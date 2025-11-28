@@ -185,9 +185,11 @@ Componente Não Funcional — ErrorBoundary
 
 ---
 
+<img width="1352" height="629" alt="image" src="https://github.com/user-attachments/assets/6ab5f042-84aa-442a-a4dd-30f9f3f46bd4" />
 
 Desenvolvido com ❤️ e ☕ por Maria Eduarda, Leticia Oliveira, Jose Alejandro e Matheus Werbeth
 
 
 "O medo nunca foi tão medonho BOOOOOOOO!" 🎃
+
 

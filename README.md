@@ -161,26 +161,26 @@ Identificação dos membros e componentes desenvolvidos por cada um;
 
 Maria Eduarda Pereira Celestino (01811588)
 
-Componente Essencial 1 — Header
-Componente Essencial 2 — Navigation
+Componente Essencial 1 — Header —
+Componente Essencial 2 — Navigation —
 Componente Não Funcional — ClassicMovieCard
 
 Letícia Oliveira Santos (01807942)
 
-Componente Essencial 3 — MovieCard
-Componente Essencial 4 — MovieGrid
+Componente Essencial 3 — MovieCard —
+Componente Essencial 4 — MovieGrid —
 Componente Não Funcional — LoadingSpinner
 
 Matheus Werbeth Sousa Lourenço (01817298)
 
-Componente Essencial 5 — SearchBar
-Componente Essencial 6 — TrailerModal
+Componente Essencial 5 — SearchBar —
+Componente Essencial 6 — TrailerModal —
 Componente Não Funcional — AutoScrollMovies
 
 José Alejandro Teixeira da Silva (01796473)
 
-Componente Essencial 7 — BotaoFavorito
-Componente Essencial 8 — ImageWithFallback
+Componente Essencial 7 — BotaoFavorito —
+Componente Essencial 8 — ImageWithFallback —
 Componente Não Funcional — ErrorBoundary
 
 ---
@@ -190,3 +190,4 @@ Desenvolvido com ❤️ e ☕ por Maria Eduarda, Leticia Oliveira, Jose Alejandr
 
 
 "O medo nunca foi tão medonho BOOOOOOOO!" 🎃
+

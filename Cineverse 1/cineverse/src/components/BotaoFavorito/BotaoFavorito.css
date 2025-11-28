@@ -1,0 +1,74 @@
+.btn-favorito {
+  background: rgba(255, 71, 87, 0.9);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+}
+
+.btn-favorito:hover {
+  background: #ff2e43;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+}
+
+.btn-favorito.favoritado {
+  background: rgba(46, 213, 115, 0.9);
+}
+
+.btn-favorito.favoritado:hover {
+  background: #25c76f;
+  box-shadow: 0 4px 12px rgba(46, 213, 115, 0.4);
+}
+
+.btn-favorito.pequeno {
+  padding: 4px 8px;
+  font-size: 10px;
+  gap: 2px;
+}
+
+.btn-favorito.grande {
+  padding: 12px 20px;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.btn-favorito:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-favorito.processando {
+  animation: pulse 1.5s infinite;
+}
+
+.heart-icon {
+  font-size: 14px;
+}
+
+.btn-favorito.pequeno .heart-icon {
+  font-size: 12px;
+}
+
+.btn-favorito.grande .heart-icon {
+  font-size: 16px;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}

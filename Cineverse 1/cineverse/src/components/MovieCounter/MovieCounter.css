@@ -1,0 +1,136 @@
+.movie-counter {
+  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+  min-width: 150px;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-counter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.movie-counter.animating::before {
+  left: 100%;
+}
+
+.movie-counter:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.counter-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #fff, #ccc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.counter-label {
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Temas de cores */
+.movie-counter.red {
+  border-color: #ff0000;
+}
+
+.movie-counter.red .counter-number {
+  background: linear-gradient(135deg, #ff0000, #ff4444);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movie-counter.blue {
+  border-color: #007bff;
+}
+
+.movie-counter.blue .counter-number {
+  background: linear-gradient(135deg, #007bff, #00aaff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movie-counter.green {
+  border-color: #00cc00;
+}
+
+.movie-counter.green .counter-number {
+  background: linear-gradient(135deg, #00cc00, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movie-counter.purple {
+  border-color: #8a2be2;
+}
+
+.movie-counter.purple .counter-number {
+  background: linear-gradient(135deg, #8a2be2, #ba55d3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Efeito de pulso durante animação */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.movie-counter.animating .counter-number {
+  animation: pulse 0.5s ease-in-out;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .movie-counter {
+    padding: 1.5rem 1rem;
+    min-width: 120px;
+  }
+  
+  .counter-number {
+    font-size: 2.5rem;
+  }
+  
+  .counter-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-counter {
+    padding: 1rem 0.75rem;
+    min-width: 100px;
+  }
+  
+  .counter-number {
+    font-size: 2rem;
+  }
+  
+  .counter-label {
+    font-size: 0.8rem;
+  }
+}
